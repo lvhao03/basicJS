@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./includes/header.css">
+    <link rel="stylesheet" href="./includes/footer.css">
+    <link rel="stylesheet" href="./assets/Css/gioHang.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Trang chủ</a> </li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./gioHang.html">Giỏ hàng</a></li>
+                <li><a href="">Về chúng tôi</a> </li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Nhập thứ bạn muốn kiếm">
+                <button type="submit">Tìm kiếm</button>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="table">
+            <div class="order">
+                <table>
+                    <tr>
+                        <th>Tên</th>
+                        <th>Giá cả</th>
+                        <th>Số lượng</th>
+                        <th>Lựa chọn</th>
+                    </tr>
+                    <tr>
+                        <td>Giày sneaker</td>
+                        <td>200000</td>
+                        <td>
+                            <button class="subtract">-</button>
+                            <span class="ammount">1</span>
+                            <button class="add">+</button>
+                        </td>
+                        <td><button class="addToCart">Thêm</button></td>
+                    </tr>
+                    <tr>
+                        <td>Áo thun</td>
+                        <td>150000</td>
+                        <td>
+                            <button class="subtract">-</button>
+                            <span class="ammount">1</span>
+                            <button class="add">+</button>
+                        </td>
+                        <td><button class="addToCart">Thêm</button></td>
+                    </tr>
+                    <tr>
+                        <td>Quần Jean</td>
+                        <td>100000</td>
+                        <td>
+                            <button class="subtract">-</button>
+                            <span class="ammount">1</span>
+                            <button class="add">+</button>
+                        </td>
+                        <td><button class="addToCart">Thêm</button></td>
+                    </tr>
+                    <tr>
+                        <td>Nón len</td>
+                        <td>250000</td>
+                        <td>
+                            <button class="subtract">-</button>
+                            <span class="ammount">1</span>
+                            <button class="add">+</button>
+                        </td>
+                        <td><button class="addToCart">Thêm</button></td>
+                    </tr>
+                </table>
+            </div>
+            <h2>Giỏ hàng</h2>
+            <div class="shopping_cart">
+                <table>
+                    <tbody>
+                        <tr>
+                            <th>Tên</th>
+                            <th>Giá cả</th>
+                            <th>Số lượng</th>
+                            <th>Lựa chọn</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="money">
+            <div class="money_info">
+                <p class="sum">Tổng tiền: </p>
+            </div>
+            <button class="buy">Mua hàng</button>
+        </div>
+    </div>
+    <footer class="col-sm-12">
+        <div class="footer-col col-sm-12 col-4">
+            <div class="footer-content">
+                <h2 class="footer-hd">Về chúng tôi</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa quisquam debitis! Recusandae vel commodi aut reprehenderit quis harum quas quia amet </p>
+            </div>
+        </div>
+        <div class="footer-col col-sm-12 col-2">
+            <div class="footer-content">
+                <h2 class="footer-hd">Tags</h2>
+                <span>Quần jean</span>
+                <span>Giảm giá</span>
+                <span>Khuyến mãi</span>
+                <span>Giày Sneaker</span>
+                <span>Aó thun trắng</span>
+                <span>Kính đen</span>
+            </div>
+        </div>
+        <div class="footer-col col-sm-12 col-2">
+            <div class="footer-content">
+                <h2 class="footer-hd">Chủ đề</h2>
+                <ul>
+                    <li><a href="">A B C</a></li>
+                    <li><a href="">Q&A</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-col col-sm-12 col-4">
+            <div class="footer-content">
+                <div class="social-media">
+                    <h2 class="footer-hd">Thông tin liên hệ</h2>
+                    <a href=""><i class="footer_icons fa fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="footer_icons fa fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="footer_icons fa fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="footer_icons fa fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="copyright col-sm-12">Bản quyền về @2022.com</p>
+            </div>
+        </div>
+    </footer>
+    <script defer src="./assets/Javascript/gioHang.js"></script>
+</body>
+</html>

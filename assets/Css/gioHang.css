@@ -1,0 +1,69 @@
+body {
+    max-width: 1200px;
+    background-color: #f5f5fa;
+    margin: 0 auto;
+}
+h2 {
+    margin: 20px 0 10px;
+}
+.content {
+    margin-top: 50px;
+    padding: 15px;
+    display: flex;
+    background-color: white;
+}
+
+.table {
+    width: 50%;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th,td{
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: black;
+    color: white;
+}
+
+button {
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.addToCart {
+    background-color: yellow;
+}
+
+.delete {
+    color: white;
+    background-color: red;
+}
+
+.money {
+    padding: 10px;
+    width: 200px;
+    height: 110px;
+    margin-left: 50px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 0 1px black;
+}
+
+.buy {
+    background-color: red;
+    color: white;
+}

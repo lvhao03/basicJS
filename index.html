@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./includes/header.css">
+    <link rel="stylesheet" href="./includes/footer.css">
+    <link rel="stylesheet" href="./assets/Css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Trang chủ</a> </li>
+                <li><a href="./sanpham.html">Sản phẩm</a></li>
+                <li><a href="./gioHang.html">Giỏ hàng</a></li>
+                <li><a href="">Về chúng tôi</a> </li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Nhập thứ bạn muốn kiếm">
+                <button type="submit">Tìm kiếm</button>
+            </div>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="slider">
+            <img src="./images/1.jpg" alt="" class="mainImage">
+            <button class="pre"><i class="fas fa-arrow-left"></i></button>
+            <button class="next"><i class="fas fa-arrow-right"></i></button>
+            <div class="dots">
+                <div class="dot active" onclick="changeImageByDot(0, this)"></div>
+                <div class="dot" onclick="changeImageByDot(1, this)"></div>
+                <div class="dot" onclick="changeImageByDot(2, this)"></div>
+                <div class="dot" onclick="changeImageByDot(3, this)"></div>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Danh mục</h2>
+            <div class="item_List">
+                <div class="item">
+                    <img class='itemImg'src="https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn" alt="">
+                    <p>Thiết bị điện tử</p>
+                </div>
+                <div class="item">
+                    <img class='itemImg'src="https://cf.shopee.vn/file/687f3967b7c2fe6a134a2c11894eea4b_tn" alt="">
+                    <p>Thời trang nam</p>
+                </div>
+                <div class="item">
+                    <img class='itemImg'src="https://cf.shopee.vn/file/75ea42f9eca124e9cb3cde744c060e4d_tn" alt="">
+                    <p>Thời trang nữ</p>
+                </div>
+                <div class="item">
+                    <img class='itemImg'src="https://cf.shopee.vn/file/86c294aae72ca1db5f541790f7796260_tn" alt="">
+                    <p>Đồng hồ</p>
+                </div>
+                <div class="item">
+                    <img class='itemImg'src="https://cf.shopee.vn/file/7abfbfee3c4844652b4a8245e473d857_tn" alt="">
+                    <p>Thiết bị gia dụng</p>
+                </div>
+                <div class="item">
+                    <img class='itemImg'src="https://cf.shopee.vn/file/c3f3edfaa9f6dafc4825b77d8449999d_tn" alt="">
+                    <p>Thiết bị điện tử</p>
+                </div>
+            </div>
+            <h2>Sales</h2>
+            <div class="timer">
+                <div>
+                    <p class="day"></p>
+                    <span>Ngày</span>
+                </div>
+                <div>
+                    <p class="hour"></p>
+                    <span>Giờ</span>
+                </div>
+                <div>
+                    <p class="minute"></p>
+                    <span>Phút</span>
+                </div>
+                <div>
+                    <p class="second"></p>
+                    <span>Giây</span>
+                </div>
+            </div>
+            <h2>Sản phẩm</h2>
+            <div class="container">
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjLEe7QEulFnoeyMf-m05K6FfOkj5vSnig_g&usqp=CAU" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <a href="sanpham.html"> Giày Sneaker xanh</a> 
+                        </div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card" >
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8874eKUT6foBaDxHupQRYF7yr7YR5DByQpA&usqp=CAU" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <a href="sanpham.html">Quần đùi</a> 
+                        </div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuGHtK5J3xhH6GV3OI8mI5Iq8BPV__TF125p64_uiv21o1ZfLgJiyLTioJ8A4ZL9tPJxo&usqp=CAU" alt="">
+                    <div class="card-body">
+                        <div class="card-title">
+                            <a href="./sanpham.html">Áo trắng</a>
+                        </div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cf.shopee.vn/file/dddd39440780eee0fefa25b153653664" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Áo trắng</div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cf.shopee.vn/file/642a25b2a0b647b3972241a7bd8a76e6" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Quần Kaki</div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cf.shopee.vn/file/a72d6610e96e5de19f6e9d0a931cd9b7" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Giày Sneaker</div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cf.shopee.vn/file/b14bca20f1105bac1fc84101454e5737" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Áo trắng</div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cf.shopee.vn/file/85669408ac6eccce71e7a9567622f2bc" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Áo thun trắng</div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cf.shopee.vn/file/fd4cbbb0e450bc0c9cf5fbe6a0837c24" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Áo Gucci đen</div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://cf.shopee.vn/file/71e9bb615a387303c4515a3ca0ef0d68" alt="">
+                    <div class="card-body">
+                        <div class="card-title">Áo Gucci trắng</div>
+                        <div class="card-price">₫1.900 - ₫2.700</div>
+                    </div>
+        
+                    <div class="sub_menu hide">
+                        <i class="icons fas fa-heart"></i>
+                        <i class="icons fas fa-plus"></i>
+                        <a href="./gioHang.html"><i class="icons fas fa-shopping-cart"></i></a>
+                        <i class="icons fas fa-sliders-h"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="col-sm-12">
+        <div class="footer-col col-sm-12 col-4">
+            <div class="footer-content">
+                <h2 class="footer-hd">Về chúng tôi</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis ipsa quisquam debitis! Recusandae vel commodi aut reprehenderit quis harum quas quia amet </p>
+            </div>
+        </div>
+        <div class="footer-col col-sm-12 col-2">
+            <div class="footer-content">
+                <h2 class="footer-hd">Tags</h2>
+                <span>Quần jean</span>
+                <span>Giảm giá</span>
+                <span>Khuyến mãi</span>
+                <span>Giày Sneaker</span>
+                <span>Aó thun trắng</span>
+                <span>Kính đen</span>
+            </div>
+        </div>
+        <div class="footer-col col-sm-12 col-2">
+            <div class="footer-content">
+                <h2 class="footer-hd">Chủ đề</h2>
+                <ul>
+                    <li><a href="">A B C</a></li>
+                    <li><a href="">Q&A</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-col col-sm-12 col-4">
+            <div class="footer-content">
+                <div class="social-media">
+                    <h2 class="footer-hd">Thông tin liên hệ</h2>
+                    <a href=""><i class="footer_icons fa fa-brands fa-twitter"></i></a>
+                    <a href=""><i class="footer_icons fa fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="footer_icons fa fa-brands fa-youtube"></i></a>
+                    <a href=""><i class="footer_icons fa fa-brands fa-instagram"></i></a>
+                </div>
+                <p class="copyright col-sm-12">Bản quyền về @2022.com</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/Javascript/script.js"></script>
+</body>
+</html>
